@@ -21,8 +21,8 @@ class MyClass {
     public static void main(String[] args) {
         Scanner value = new Scanner(System.in);
         System.out.println("Enter the number of value: ");
-        int va = value.nextInt();
         try {
+            int va = value.nextInt();
             if (va == 2) {
                 System.out.println("Enter the 1st value: ");
                 int a = value.nextInt();
@@ -53,6 +53,7 @@ class MyClass {
             }
         } catch (Exception e) {
             System.out.println("Invalide value!");
+            System.out.println(e);
             System.exit(1);
         }
 
